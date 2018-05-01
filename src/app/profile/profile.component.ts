@@ -9,17 +9,23 @@ import { GitService } from '../git.service'
 export class ProfileComponent implements OnInit {
   profile:any[];
   repos:any[];
+  username:string;
 
   constructor(public profileService: GitService) {
-    this.profileService.getProfileInfo().subscribe(profile => {
-      console.log(profile)
-      this.profileService = profile;
-    });
+  }
 
-    this.profileService.getProfileRepos().subscribe(repos => {
-      console.log(repos);
-      this.repos = repos;
-    })
+   findProfile(){
+     this.profileService.updateProfile(this.username);
+     this.profileService.getProfileInfo().subscribe(profile => {
+       console.log(profile)
+       this.profileService = profile;
+     });
+
+     this.profileService.getProfileRepos().subscribe(repos => {
+       console.log(repos);
+       this.repos = repos;
+     })
+
    }
 
   ngOnInit() {
