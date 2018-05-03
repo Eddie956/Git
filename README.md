@@ -1,6 +1,6 @@
 # MY Git
 This is a github web page where one stores his or her own projects for future reference or sharing with friends.
-###Version
+# Version
 29/04/2018
 #### By Eddie
 
