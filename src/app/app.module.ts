@@ -8,12 +8,16 @@ import { GitService } from './git.service';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HeadingComponent } from './heading/heading.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    HeadingComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,31 +1,27 @@
-# Git
-<<<<<<< HEAD
+# MY Git
+This is a github web page where one stores his or her own projects for future reference or sharing with friends.
+###Version
+29/04/2018
+#### By Eddie
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## Description
+This is a web page application that helps users to store there individual projects. It contains repositories and individual personal information for any to reference the work of a person registered in github.
+## Setup/Installation Requirements
+* One just need to have access to the internet
+* Access to github then register
+* Read the instruction on how to use the webpage
+## Known Bugs
+This project has alot of bags when creating. It is tiresome and time consuming
+## Technologies Used
+ * HTML
+ * Angular
+ * css
+## Support and contact details
+For any compliment contact.
+No. 0725463583
+email: muugieddie3@gmail.com
+### License
+**
+MIT
+  
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-IP
->>>>>>> 2522af43b3753734a43b70360ded401209d25d0f
