@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GitService } from '../git.service'
+import { GitService } from '../git.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,27 +7,25 @@ import { GitService } from '../git.service'
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  profile:any[];
-  repos:any[];
-  username:string;
+  profile: any[];
+  repos: any[];
+  username: string;
 
-  constructor(public profileService: GitService) {
+  constructor(private profileService: GitService) {
   }
 
-   findProfile(){
-     this.profileService.updateProfile(this.username);
-     this.profileService.getProfileInfo().subscribe(profile => {
-       console.log(profile)
-       this.profileService = profile;
-     });
+  findProfile() {
+    this.profileService.updateProfile(this.username);
+    this.profileService.getProfileInfo().subscribe(profile => {
+      console.log(profile);
+      this.profile = profile;
+    });
 
-     this.profileService.getProfileRepos().subscribe(repos => {
-       console.log(repos);
-       this.repos = repos;
-     })
-
-   }
-
+    this.profileService.getProfileRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    })
+  }
   ngOnInit() {
   }
 

@@ -6,8 +6,9 @@ import 'rxjs/add/operator/map';
 export class GitService {
 
  public username:string;
- public clientid = '0f7f527f3f6e9e95aa03';
- public  clientsecret = '2602cee69e47cffd68cac3f72c4af6b3a234a4ef';
+  public clientid = '0f7f527f3f6e9e95aa03';
+  public  clientsecret = '2602cee69e47cffd68cac3f72c4af6b3a234a4ef';
+
 
   constructor(public http:Http) {
     console.log("service is ready");
