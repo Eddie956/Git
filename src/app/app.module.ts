@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeadingComponent } from './heading/heading.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PipesComponent } from './pipes/pipes.component';
     AppComponent,
     ProfileComponent,
     HeadingComponent,
-    PipesComponent
+    PipesComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
