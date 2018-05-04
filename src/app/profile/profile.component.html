@@ -1,10 +1,14 @@
 <div class="container-body">
-
+  <form action="" class="form">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search user with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+    </div>
+  </form>
   <div *ngIf="profile">
     <div class="panel panel-default">
       <div class="panel-profile">
         {{profile.name}}
-        <medium>{{profile.login}}</medium>
+        <small>{{profile.login}}</small>
         <span *ngIf="profile.company">,Works at {{profile.company}}</span>
         {{profile.location}}
       </div>
