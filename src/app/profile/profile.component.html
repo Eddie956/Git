@@ -1,7 +1,8 @@
 <div class="container-body">
   <form action="" class="form">
     <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search user with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+      <input type="text" class="form-control" placeholder="Search user with username" [(ngModel)]="username" name="username" (keyup)="findProfile()"
+        autocomplete="off">
     </div>
   </form>
   <div *ngIf="profile">
@@ -14,7 +15,7 @@
       </div>
       <div class="panel-body">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
           </div>
           <div class="col-sm-5">
@@ -25,13 +26,12 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4">
             <div>
               <p>
                 <span class="label label-default">{{profile.followers}} Followers</span>
-                <span class="label label-primary">Following {{profile.Following}}</span>
-                <span class="label-succcess">{{profile.public_gists}} Public gists</span>
-                <span class="label label-info">{{profile.public_repos}} Public Repos</span>
+                <span class="label label-primary"> {{profile.Following}} Following</span>
+                <span class="label label-info">{{profile.public_repos}}  Repos</span>
               </p>
               <p>
                 <a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">VIew profile on github</a>
@@ -41,9 +41,9 @@
                   <h3 class="panel-title">Repos</h3>
                 </div>
                 <div class="panel-body" *ngFor="let repo of repos">
-                  <p class="clearfix">
+                  <p class="clear">
                     {{repo.name}}
-                    <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">View this project on github</a>
+                    <a href="{{repo.html_url}}" target="_blank" class="btn btn btn-warning pull-right">View this project on github</a>
                   </p>
                   <p>{{repo.description}}</p>
                 </div>
@@ -54,7 +54,5 @@
       </div>
     </div>
   </div>
-  <div class="panel-footer">
-    <p>{{datetime}}</p>
-  </div>
+ 
 </div>
